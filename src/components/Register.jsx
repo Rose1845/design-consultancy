@@ -1,23 +1,53 @@
-import React from 'react'
+import React ,{useState}from 'react'
+import { Link } from 'react-router-dom'
 
 const Register = () => {
+    const [name,setName]=useState("")
+    const [email,setEmail]=useState("")
+    const [password,setPassword]=useState("")
+    const [confirmPassword,setConfirmPassword]=useState("")
   return (
+    <div className='container'>
     <form>
+        <h1 className='text-center'>Register</h1>
   <div className="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-  
+    <label htmlFor="exampleInputname">Username</label>
+    <input value={name}
+    onChange={(e)=>setName(e.target.value)}
+     type="name" className="form-control" id="exampleInputName" aria-describedby="nameHelp"/>
+  </div>
+
+  <div className="form-group">
+    <label htmlFor="exampleInputEmail1">Email address</label>
+    <input value={email} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
   </div>
   <div className="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" className="form-control" id="exampleInputPassword1"/>
+    <label htmlFor="exampleInputPassword1">Password</label>
+    <input value={password}
+    onChange={(e)=>setPassword(e.target.value)}
+    type="password" className="form-control" id="exampleInputPassword1"/>
   </div>
-  <div className="form-group form-check">
-    <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-    <label className="form-check-label" for="exampleCheck1">Check me out</label>
+  <div className="form-group">
+    <label htmlFor="exampleInputPassword1">Confirm Password</label>
+    <input value={confirmPassword}
+    onChange={(e)=>setConfirmPassword(e.target.value)}
+    type="password" className="form-control" id="exampleInputPassword1"/>
   </div>
-  <button type="submit" className="btn btn-primary">Submit</button>
+ <div>
+ <small>Already have an Account 
+    <span>
+       
+        <Link to='/login'>
+        Login
+        </Link>
+    </span>
+    </small>
+ </div>
+  <button 
+  disabled={ password === !confirmPassword  }
+  type="submit" className="btn btn-primary">Register</button>
 </form>
+    </div>
   )
 }
 
