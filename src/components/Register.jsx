@@ -34,13 +34,10 @@ const Register = () => {
     type="password" className="form-control" id="exampleInputPassword1"/>
   </div>
  <div>
- <small>Already have an Account 
-    <span>
-       
+ <small>Already have an Account ?
         <Link to='/login'>
         Login
         </Link>
-    </span>
     </small>
  </div>
   <button 

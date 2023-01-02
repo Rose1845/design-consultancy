@@ -6,3 +6,11 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.footer{
+  position: fixed;
+  padding: 16px 20px;
+  width: 100%;
+  background-color: black;
+  height: 80px;
+  bottom: 0;
+}
