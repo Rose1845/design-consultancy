@@ -1,6 +1,4 @@
-# design-consultancy
-
-#####interior design consultancy
+# interior design consultancy
 
 ```
 npm install 
