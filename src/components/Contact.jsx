@@ -2,8 +2,9 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div style={{flexDirection:'column'}}className='d-flex justify-content-center align-items-center '>
+    <div style={{flexDirection:'column'}}className='row d-flex justify-content-center align-items-center '>
       <h2>Describe your design and let us know</h2>
+        <div className='col'>
         <form className='d-flex justify-content-center align-items-center form-group'action="">
            <div className='row'>
            <div className='col'>
@@ -38,6 +39,11 @@ const Contact = () => {
             </div>
            </div>
         </form>
+        <span className='row rounded bg-black text-white'>OR</span>
+        <div>
+
+        </div>
+        </div>
     </div>
   )
 }

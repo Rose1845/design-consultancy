@@ -19,7 +19,9 @@ const Register = () => {
 
   <div className="form-group">
     <label htmlFor="exampleInputEmail1">Email address</label>
-    <input value={email} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+    <input value={email} 
+     onChange={(e)=>setEmail(e.target.value)}
+    type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
   </div>
   <div className="form-group">
     <label htmlFor="exampleInputPassword1">Password</label>

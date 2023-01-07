@@ -4,22 +4,23 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
+    
     <div className='footer'>
-        <div className='flex'>
+        <div className='col d-flex d-flex justify-content-center align-items-center'>
         <p className='text-center text-white'>&copy; copyright {new Date().getFullYear()}</p>
-        <div className='col'>
-        <Link>
+        <div className='col d-flex justify-content-center align-items-center'>
+        <Link to=''>
         <FaTwitter/>
         </Link>
-       <Link>
+       <Link to=''>
        <FaLinkedin/>
        </Link>
-       <Link>
+       <Link to=''>
        <FaGithub/>
-       </Link>
-          
+       </Link> 
+       <p className='text-white text-center'>rosevilla designs</p>
         </div>
-        <p className='text-white text-center'>rosevilla designs</p>
+       
         </div>
     </div>
   )
