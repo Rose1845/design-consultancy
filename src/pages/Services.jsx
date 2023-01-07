@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import ser from '../../public/serv.jpg'
+
 
 function Services() {
   return (
@@ -17,7 +17,7 @@ we get to work transforming your home.</p>
         data-aos-offset="300"
      data-aos-easing="ease-in-sine">
       <Card >
-        <Card.Img classNam='rounded'variant="top" src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-2cc411f/online-decorating/wp-content/uploads/2017/03/havenly-online-interior-design-services.jpg"/>
+        <Card.Img className='rounded'variant="top" src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-2cc411f/online-decorating/wp-content/uploads/2017/03/havenly-online-interior-design-services.jpg"/>
         <Card.Body>
           <Card.Title>Havenly</Card.Title>
           <Card.Text>

@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -16,12 +17,13 @@ const Header = () => {
             <Nav.Link href="#/about">About</Nav.Link>
             <Nav.Link href="#/services">Services</Nav.Link>
             <Nav.Link href="#/contact">Contact</Nav.Link>
-            <NavDropdown title="Account" id="basic-nav-dropdown">
+            <Link to='/account' style={{backgroundColor:'orange',border:' solid orange'}} className='btn btn-primary p-2'>Get Started</Link> 
+            {/* <NavDropdown title="Account" id="basic-nav-dropdown">
               <NavDropdown.Item href="#/login">Login</NavDropdown.Item>
               <NavDropdown.Item href="#/register">
                 Register
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

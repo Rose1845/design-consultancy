@@ -3,7 +3,9 @@ import { Link, useNavigate } from 'react-router-dom'
 import {createUserWithEmailAndPassword} from 'firebase/auth'
 import {auth} from '.././firebase'
 
-const Register = () => {
+
+
+const GetStarted = () => {
   const navigate=useNavigate()
     // const [name,setName]=useState("")
     const [email,setEmail]=useState("")
@@ -24,15 +26,11 @@ const Register = () => {
 
 
   return (
-    <div style={{flexDirection:'column'}} className='register container d-flex justify-content-center align-items-center'>
+    <div className='register container d-flex justify-content-center align-items-center'>
     <form>
-        <h1 className='text-center text-white'>Sign Up</h1>
-  {/* <div className="form-group">
-    <label htmlFor="exampleInputname">Username</label>
-    <input value={name}
-    onChange={(e)=>setName(e.target.value)}
-     type="name" className="form-control" id="exampleInputName" aria-describedby="nameHelp"/>
-  </div> */}
+        <h1 className='text-center'>Let's get Started</h1>
+        <p>A designer space you'll love... at a price you'll love even more!</p>
+  
 
   <div className="form-group">
     <label htmlFor="exampleInputEmail1">Email address</label>
@@ -46,7 +44,7 @@ const Register = () => {
     onChange={(e)=>setPassword(e.target.value)}
     type="password" className="form-control" id="exampleInputPassword1"/>
   </div>
-  {/* S */}
+ 
  <div>
  <small>Already have an Account ?
         <Link to='/login'>
@@ -66,4 +64,4 @@ const Register = () => {
   )
 }
 
-export default Register
+export default GetStarted

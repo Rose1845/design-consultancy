@@ -8,14 +8,14 @@ const Home = () => {
   return (
     <div data-aos="fade-out "
     data-aos-offset="300"
- data-aos-easing="ease-in-sine" className='container-fluid image pt-3'>
+ data-aos-easing="ease-in-sine"style={{flexDirection:'column'}} className='container-fluid image pt-3 d-flex justify-content-center align-items-center '>
        
         <h1 
         className='text-center text-white'>Interior Design Consultancy</h1>
         <p data-os="zoom-in" 
         data-aos-offset="400"
         data-aos-easing="ease-in-sine"
-     className='text-center'>Stunning interior design services, now within reach.</p>
+     className='text-center text-bold'>Stunning interior design services, now within reach.</p>
             <div className='d-flex justify-content-center'>
             <button style={{backgroundColor:'orange',border:' solid orange'}} className='btn btn-primary p-2'>Get Started</button>
             </div>

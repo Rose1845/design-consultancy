@@ -10,6 +10,7 @@ import Services from './pages/Services'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import Contact from './components/Contact'
+import GetStarted from './pages/GetStarted'
 AOS.init();
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/login'element={<Login/>}/>
         <Route path='/register'element={<Register/>}/>
         <Route path='/contact'element={<Contact/>}/>
+        <Route path='/account'element={<GetStarted/>}/>
         <Route path="*"element={<NotFound/>}/>
       </Routes>
       </Layout>

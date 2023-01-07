@@ -22,3 +22,11 @@
   background-repeat: no-repeat;
 
 }
+.register,.login{
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://cdn.decorilla.com/imgp/jpg/c493e256-d915-411f-a626-e435b16ce27f/online-interior-design-jobs-signup.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

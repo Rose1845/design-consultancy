@@ -6,8 +6,10 @@ const Footer = () => {
   return (
     
     <div className='footer'>
-        <div className='col d-flex d-flex justify-content-center align-items-center'>
-        <p className='text-center text-white'>&copy; copyright {new Date().getFullYear()}</p>
+        <div style={{flexDirection:'column'}}className='col d-flex d-flex justify-content-center align-items-center'>
+       <div>
+       <p className='text-center text-white'>&copy; copyright {new Date().getFullYear()}</p>
+       </div>
         <div className='col d-flex justify-content-center align-items-center'>
         <Link to=''>
         <FaTwitter/>
@@ -18,7 +20,9 @@ const Footer = () => {
        <Link to=''>
        <FaGithub/>
        </Link> 
-       <p className='text-white text-center'>rosevilla designs</p>
+      <div>
+      <p className='text-white text-center'>rosevilla designs</p>
+      </div>
         </div>
        
         </div>
